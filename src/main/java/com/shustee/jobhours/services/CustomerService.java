@@ -22,8 +22,8 @@ public class CustomerService {
         return customerRepository.findAll();
     }
 
-    public Customer getCustomer(String customerPhone) {
-        return customerRepository.findByCustomerPhone(customerPhone);
+    public Customer getCustomer(String email) {
+        return customerRepository.findByEmail(email);
     }
 
     public Customer addCustomer(Customer customer) {

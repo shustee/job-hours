@@ -23,8 +23,8 @@ public class HomeController {
     }
 
     @GetMapping("customer")
-    public Customer getCustomer(String customerPhone) {
-        return customerService.getCustomer(customerPhone);
+    public Customer getCustomer(String email) {
+        return customerService.getCustomer(email);
     }
 
     @PostMapping("customer")

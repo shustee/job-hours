@@ -8,6 +8,6 @@ import com.shustee.jobhours.entities.Customer;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
     
-    Customer findByCustomerPhone(String customerPhone);
+    Customer findByEmail(String email);
     
 }
